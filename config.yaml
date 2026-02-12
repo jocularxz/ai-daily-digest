@@ -1,0 +1,272 @@
+# AI每日速递 配置文件
+# 敏感信息优先从环境变量读取: DASHSCOPE_API_KEY, SERVERCHAN_SENDKEY
+
+llm:
+  api_key: ""
+  models:
+    - name: "deepseek-v3.1"
+      priority: 1
+    - name: "qwen-plus"
+      priority: 2
+    - name: "deepseek-v3.2"
+      priority: 3
+    - name: "qwen3-max-preview"
+      priority: 4
+  timeout: 120
+
+notifier:
+  serverchan:
+    sendkey: ""
+
+arxiv:
+  categories:
+    - "cs.CL"
+    - "cs.AI"
+    - "cs.LG"
+    - "cs.CV"
+    - "cs.RO"
+  keywords:
+    - "fine-tuning"
+    - "finetuning"
+    - "continual learning"
+    - "lifelong learning"
+    - "model architecture"
+    - "LLM"
+    - "large language model"
+    - "language model"
+    - "transformer"
+    - "PEFT"
+    - "LoRA"
+    - "QLoRA"
+    - "MoE"
+    - "mixture of experts"
+    - "attention mechanism"
+    - "self-attention"
+    - "flash attention"
+    - "instruction tuning"
+    - "RLHF"
+    - "DPO"
+    - "PPO"
+    - "GRPO"
+    - "quantization"
+    - "distillation"
+    - "knowledge distillation"
+    - "multimodal"
+    - "vision language"
+    - "VLM"
+    - "reasoning"
+    - "chain of thought"
+    - "CoT"
+    - "agent"
+    - "LLM agent"
+    - "retrieval augmented"
+    - "RAG"
+    - "long context"
+    - "context window"
+    - "efficient inference"
+    - "speculative decoding"
+    - "mixture of agents"
+    - "prompt engineering"
+    - "in-context learning"
+    - "few-shot learning"
+    - "zero-shot"
+    - "embedding"
+    - "representation learning"
+    - "contrastive learning"
+    - "world model"
+    - "video generation"
+    - "image generation"
+    - "diffusion model"
+    - "flow matching"
+    - "speech recognition"
+    - "text-to-speech"
+    - "code generation"
+    - "mathematical reasoning"
+  max_papers: 15
+  days_back: 1
+
+news:
+  rss_sources:
+    - name: "机器之心"
+      rss_url: "https://www.jiqizhixin.com/rss"
+      type: "cn"
+    - name: "量子位"
+      rss_url: "https://www.qbitai.com/feed"
+      type: "cn"
+    - name: "新智元"
+      rss_url: "https://www.jiqizhixin.com/rss"
+      type: "cn"
+    - name: "36氪AI"
+      rss_url: "https://36kr.com/feed"
+      type: "cn"
+    - name: "AI科技评论"
+      rss_url: "https://www.leiphone.com/feed"
+      type: "cn"
+    - name: "InfoQ AI"
+      rss_url: "https://www.infoq.cn/feed"
+      type: "cn"
+  hackernews: false
+  search_keywords:
+    - "AI"
+    - "artificial intelligence"
+    - "GPT"
+    - "ChatGPT"
+    - "Claude"
+    - "Gemini"
+    - "LLM"
+    - "deep learning"
+    - "machine learning"
+    - "neural network"
+    - "transformer"
+    - "OpenAI"
+    - "Anthropic"
+    - "DeepMind"
+    - "NVIDIA"
+    - "大模型"
+    - "人工智能"
+    - "机器学习"
+    - "深度学习"
+  max_news: 8
+  quality_filter:
+    high_value_keywords:
+      - "发布"
+      - "推出"
+      - "开源"
+      - "突破"
+      - "新模型"
+      - "新方法"
+      - "SOTA"
+      - "性能提升"
+      - "训练"
+      - "推理"
+      - "架构"
+      - "算法"
+      - "benchmark"
+      - "论文"
+      - "研究"
+      - "技术"
+      - "模型"
+      - "微调"
+      - "量化"
+      - "多模态"
+      - "Agent"
+      - "RAG"
+    low_value_keywords:
+      - "离职"
+      - "加入"
+      - "人事"
+      - "任命"
+      - "融资"
+      - "估值"
+      - "上市"
+      - "收购"
+      - "合并"
+      - "裁员"
+      - "跳槽"
+      - "奖金"
+      - "薪酬"
+
+knowledge:
+  topics_file: "data/knowledge_topics.txt"
+  history_file: "data/knowledge_history.json"
+  max_history_days: 60
+  categories:
+    基础概念:
+      - "梯度下降与反向传播"
+      - "激活函数 (ReLU, GELU, Swish)"
+      - "损失函数 (Cross-Entropy, MSE, Contrastive)"
+      - "正则化技术 (L1/L2, Dropout, LayerNorm)"
+      - "Batch Normalization vs Layer Normalization"
+      - "过拟合与欠拟合"
+      - "偏差与方差权衡"
+      - "超参数调优"
+      - "学习率调度策略"
+    
+    模型架构:
+      - "Transformer架构详解"
+      - "自注意力机制 Self-Attention"
+      - "多头注意力 Multi-Head Attention"
+      - "位置编码 (Sinusoidal, RoPE, ALiBi)"
+      - "Encoder-Decoder vs Decoder-Only"
+      - "BERT vs GPT架构对比"
+      - "Vision Transformer (ViT)"
+      - "Mamba与状态空间模型"
+      - "混合专家模型 MoE"
+      - "长上下文处理技术"
+    
+    大语言模型:
+      - "LLM预训练与Scaling Law"
+      - "指令微调 Instruction Tuning"
+      - "RLHF人类反馈强化学习"
+      - "DPO直接偏好优化"
+      - "PPO算法详解"
+      - "GRPO群组相对策略优化"
+      - "思维链 Chain of Thought"
+      - "In-Context Learning"
+      - "Prompt Engineering技巧"
+      - "Few-shot vs Zero-shot Learning"
+    
+    高效训练:
+      - "LoRA低秩适配"
+      - "QLoRA量化低秩适配"
+      - "PEFT参数高效微调"
+      - "模型量化 (INT8, INT4, FP4)"
+      - "知识蒸馏 Knowledge Distillation"
+      - "混合精度训练"
+      - "梯度检查点 Gradient Checkpointing"
+      - "Flash Attention加速"
+      - "推测解码 Speculative Decoding"
+    
+    RAG与检索:
+      - "RAG检索增强生成"
+      - "向量数据库与Embedding"
+      - "稠密检索与稀疏检索"
+      - "混合检索策略"
+      - "重排序 Reranking"
+      - "Chunking分块策略"
+      - "多模态RAG"
+    
+    多模态:
+      - "多模态学习基础"
+      - "视觉语言模型VLM"
+      - "CLIP对比学习"
+      - "图像生成 Diffusion Model"
+      - "Flow Matching"
+      - "视频生成技术"
+      - "语音识别与合成"
+      - "跨模态对齐"
+    
+    强化学习:
+      - "强化学习基础 (MDP, 状态, 动作)"
+      - "On-Policy vs Off-Policy"
+      - "价值函数与Q-Learning"
+      - "策略梯度方法"
+      - "Actor-Critic架构"
+      - "PPO近端策略优化"
+      - "SAC软演员评论家"
+      - "世界模型 World Model"
+    
+    Agent与推理:
+      - "LLM Agent架构"
+      - "Tool Use工具调用"
+      - "ReAct推理行动框架"
+      - "多智能体协作"
+      - "规划与推理"
+      - "记忆机制 (短期/长期)"
+      - "Function Calling"
+    
+    前沿技术:
+      - "长上下文窗口扩展"
+      - "测试时计算 Test-Time Compute"
+      - "推理模型技术"
+      - "DeepSeek新技术"
+      - "模型合并与集成"
+      - "联邦学习"
+      - "持续学习 Continual Learning"
+      - "AI安全与对齐"
+
+content:
+  paper_count: 2
+  image_search:
+    enabled: false
+    max_images: 2
