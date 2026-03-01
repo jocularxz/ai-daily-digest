@@ -15,5 +15,6 @@
   "记忆机制 (短期/长期)": "2026-02-25",
   "Vision Transformer (ViT)": "2026-02-26",
   "LLM预训练与Scaling Law": "2026-02-27",
-  "激活函数 (ReLU, GELU, Swish)": "2026-02-28"
+  "激活函数 (ReLU, GELU, Swish)": "2026-02-28",
+  "世界模型 World Model": "2026-03-01"
 }
