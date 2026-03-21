@@ -35,5 +35,6 @@
   "In-Context Learning": "2026-03-17",
   "LoRA低秩适配": "2026-03-18",
   "视频生成技术": "2026-03-19",
-  "梯度检查点 Gradient Checkpointing": "2026-03-20"
+  "梯度检查点 Gradient Checkpointing": "2026-03-20",
+  "LLM Agent架构": "2026-03-21"
 }
