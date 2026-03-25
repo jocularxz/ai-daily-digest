@@ -39,5 +39,6 @@
   "LLM Agent架构": "2026-03-21",
   "强化学习基础 (MDP, 状态, 动作)": "2026-03-22",
   "Encoder-Decoder vs Decoder-Only": "2026-03-23",
-  "Prompt Engineering技巧": "2026-03-24"
+  "Prompt Engineering技巧": "2026-03-24",
+  "学习率调度策略": "2026-03-25"
 }
