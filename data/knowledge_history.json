@@ -48,5 +48,6 @@
   "正则化技术 (L1/L2, Dropout, LayerNorm)": "2026-03-30",
   "图像生成 Diffusion Model": "2026-03-31",
   "重排序 Reranking": "2026-04-01",
-  "推测解码 Speculative Decoding": "2026-04-02"
+  "推测解码 Speculative Decoding": "2026-04-02",
+  "PPO算法详解": "2026-04-03"
 }
