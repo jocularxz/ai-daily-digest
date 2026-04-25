@@ -1,5 +1,4 @@
 {
-  "模型合并与集成": "2026-02-23",
   "多模态RAG": "2026-02-24",
   "记忆机制 (短期/长期)": "2026-02-25",
   "Vision Transformer (ViT)": "2026-02-26",
@@ -59,5 +58,6 @@
   "Few-shot vs Zero-shot Learning": "2026-04-21",
   "自注意力机制 Self-Attention": "2026-04-22",
   "DeepSeek新技术": "2026-04-23",
-  "偏差与方差权衡": "2026-04-24"
+  "偏差与方差权衡": "2026-04-24",
+  "Batch Normalization vs Layer Normalization": "2026-04-25"
 }
