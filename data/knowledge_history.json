@@ -1,5 +1,4 @@
 {
-  "LLM预训练与Scaling Law": "2026-02-27",
   "激活函数 (ReLU, GELU, Swish)": "2026-02-28",
   "世界模型 World Model": "2026-03-01",
   "SAC软演员评论家": "2026-03-02",
@@ -59,5 +58,6 @@
   "Batch Normalization vs Layer Normalization": "2026-04-25",
   "RLHF人类反馈强化学习": "2026-04-26",
   "多模态RAG": "2026-04-27",
-  "测试时计算 Test-Time Compute": "2026-04-28"
+  "测试时计算 Test-Time Compute": "2026-04-28",
+  "视觉语言模型VLM": "2026-04-29"
 }
