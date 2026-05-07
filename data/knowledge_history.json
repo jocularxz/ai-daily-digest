@@ -1,5 +1,4 @@
 {
-  "损失函数 (Cross-Entropy, MSE, Contrastive)": "2026-03-07",
   "多模态学习基础": "2026-03-08",
   "AI安全与对齐": "2026-03-09",
   "Actor-Critic架构": "2026-03-10",
@@ -59,5 +58,6 @@
   "LLM预训练与Scaling Law": "2026-05-03",
   "过拟合与欠拟合": "2026-05-04",
   "PEFT参数高效微调": "2026-05-05",
-  "On-Policy vs Off-Policy": "2026-05-06"
+  "On-Policy vs Off-Policy": "2026-05-06",
+  "世界模型 World Model": "2026-05-07"
 }
